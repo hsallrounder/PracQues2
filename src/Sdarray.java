@@ -106,8 +106,8 @@ class Check
         Sdarray obj = null;
         // call various method as per need
         Scanner sc= new Scanner(System.in);
-        int v;
-        while(true){
+        int v=1;
+        while(v!=0){
             System.out.println("\nWelcome to the Array Menu");
             System.out.println("1 - To initialize array.");
             System.out.println("2 - To insert value in the array.");
@@ -159,9 +159,7 @@ class Check
                     obj.deleteArray();
                 }
             }
-            if(v==0){
-                break;
-            }
         }
+        sc.close();
     }
 }
